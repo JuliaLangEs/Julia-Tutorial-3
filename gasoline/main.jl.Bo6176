@@ -1,0 +1,14 @@
+
+using GLM, DataFrames, NumericExtensions
+using Distributions
+
+data = readcsv("gasoline.csv")
+
+
+x=data[:,2:4]
+y= data[:,6]
+
+data = DataFrame(X=[x],Y=[y])
+
+#OLS = glm(Y~X,Ydata,Normal(),IdentityLink())
+
